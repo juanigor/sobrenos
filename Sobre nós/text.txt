@@ -1,0 +1,13 @@
+document.getElementById("loginForm").addEventListener("submit", function(e) {
+      e.preventDefault(); // Impede o envio normal do formulário
+
+      const nome = document.getElementById("nome").value.trim();
+      const senha = document.getElementById("senha").value;
+
+      if (nome == "luysa" && senha == "06062025") {
+        window.location.href = "landing.html";
+        document.body.classList.add("fade-out");
+      } else {
+        alert("Nome ou senha incorretos!");
+      }
+    });

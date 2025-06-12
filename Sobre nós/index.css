@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
+
+body {
+  background: url('img/Fundo\ fotos.png') no-repeat center center/cover;
+  background-color: #34414A;
+  padding-right: 200px;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.container {
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  overflow: hidden;
+  align-items: center; /* Isso garante que os filhos se estiquem igualmente em altura */
+}
+
+.logo-area {
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.15);
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 150px;
+  background: white;
+  height: 50vh;
+  
+}
+
+.logo-area img {
+  width: 50vh;
+  height: auto;
+
+}
+
+.login-card {
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.15);
+  flex: 1;
+  background: #ffffff;
+  padding: 40px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 60vh;
+  max-width: 50vh;
+}
+
+.login-card h2 {
+  margin-bottom: 30px;
+  color: #2D2E33;
+  font-size: 3vh;
+}
+
+.login-card form {
+  display: flex;
+  flex-direction: column;
+}
+
+.login-card label {
+  margin-bottom: 5px;
+  font-size: 2vh;
+  color: #2D2E33;
+}
+
+.login-card input {
+  margin-bottom: 20px;
+  padding: 10px;
+  border: none;
+  border-bottom: 2px solid #2D2E33;
+  outline: none;
+  font-size: 1.5vh;
+  font-weight: bold;
+  background: transparent;
+}
+
+.login-card input::placeholder {
+  color: #aaa;
+}
+
+.login-card button {
+  background-color: #D7F0FF;
+  color: #2D2E33;
+  border: none;
+  padding: 15px;
+  font-size: 1.5vh;
+  font-weight: bold;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.login-card button:hover {
+  background-color: #bde5ff;
+}
+
+button:active {
+  transform: scale(0.97);
+}
+
+button.clicked {
+  background-color: #84C9F8;
+  transition: all 0.3s ease;
+}
+
